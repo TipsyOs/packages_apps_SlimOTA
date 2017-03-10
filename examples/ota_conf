@@ -10,6 +10,7 @@
 ota_url=https://www.dropbox.com/s/u2k60hvjn2c02h0/ota_lollipop.xml?dl=1
 release_type=Stable
 device_name=ro.product.device
+tipsy_device=ro.tipsy.device
 
 #
 # VERSION

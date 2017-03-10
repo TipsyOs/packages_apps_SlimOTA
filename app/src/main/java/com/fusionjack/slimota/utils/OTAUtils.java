@@ -68,6 +68,11 @@ public final class OTAUtils {
         return OTAUtils.getBuildProp(propName);
     }
 
+    public static String getTipsyDevice(Context context) {
+        String propName = OTAConfig.getInstance(context).getTipsyDevice();
+        return OTAUtils.getBuildProp(propName);
+    }
+
     public static String getBuildProp(String propertyName) {
         Properties buildProps = new Properties();
         try {

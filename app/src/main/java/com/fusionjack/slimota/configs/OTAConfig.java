@@ -34,6 +34,7 @@ public class OTAConfig extends Properties {
     private final static String RELEASE_TYPE = "release_type";
 
     private final static String DEVICE_NAME = "device_name";
+    private final static String TIPSY_DEVICE = "tipsy_device";
 
     private final static String VERSION_SOURCE = "version_source";
     private final static String VERSION_DELIMITER = "version_delimiter";
@@ -73,6 +74,10 @@ public class OTAConfig extends Properties {
 
     public String getDeviceSource() {
         return getProperty(OTAConfig.DEVICE_NAME, "");
+    }
+
+    public String getTipsyDevice() {
+        return getProperty(OTAConfig.TIPSY_DEVICE, "");
     }
 
     public String getDelimiter() {

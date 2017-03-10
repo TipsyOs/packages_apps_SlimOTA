@@ -24,6 +24,8 @@ How to use
   * Set the position in "version_position" to "3" (zero based)
 * Find a key in build.prop that represents your device name and set it in the "device_name"
   * SlimOTA will search this device name in the OTA xml file
+* For Tipsy Builds, find a key in build.prop that represents your tipsy device name and set it in the "tipsy_device"
+  * SlimOTA will search this tipsy device in the OTA xml file
 
 How to build
 ------------

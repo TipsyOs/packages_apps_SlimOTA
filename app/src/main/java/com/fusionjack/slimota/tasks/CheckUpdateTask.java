@@ -74,6 +74,8 @@ public class CheckUpdateTask extends AsyncTask<Context, Void, OTADevice> {
 
         OTADevice device = null;
         String deviceName = OTAUtils.getDeviceName(mContext);
+        /* For Tipsy Builds Lets use tipsy device, overwrite deviceName */
+        deviceName = OTAUtils.getTipsyDevice(mContext);
         OTAUtils.logInfo("deviceName: " + deviceName);
         if (!deviceName.isEmpty()) {
             try {
